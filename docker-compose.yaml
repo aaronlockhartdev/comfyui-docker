@@ -5,7 +5,7 @@ services:
         ports:
             - 8188:8188
         volumes:
-            - ./models:/usr/local/ComfyUI/models
-            - ./output:/usr/local/ComfyUI/output
-            - ./input:/usr/local/ComfyUI/input
-            - ./custom_nodes:/usr/local/ComfyUI/custom_nodes
+            - ./ComfyUI/models:/usr/local/ComfyUI/models
+            - ./ComfyUI/output:/usr/local/ComfyUI/output
+            - ./ComfyUI/input:/usr/local/ComfyUI/input
+            - ./ComfyUI/custom_nodes:/usr/local/ComfyUI/custom_nodes
