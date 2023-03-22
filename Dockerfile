@@ -12,7 +12,7 @@ RUN pip install -U pip \
     torchaudio \
   && pip install xformers
 
-COPY ComfyUI/requirements.txt .
+COPY ./ComfyUI/requirements.txt .
 
 RUN pip install -U pip \
   && pip install -U wheel \
@@ -26,5 +26,5 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
 EXPOSE 8188
 
-COPY ComfyUI /usr/local/ComfyUI
+COPY ./ComfyUI /usr/local/ComfyUI
 ENTRYPOINT [ "python", "/usr/local/ComfyUI/main.py", "--listen" ]
