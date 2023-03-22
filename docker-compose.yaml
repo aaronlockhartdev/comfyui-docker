@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+    comfyui:
+        build: .
+        ports:
+            - 8188:8188
+        volumes:
+            - ./models:/usr/local/ComfyUI/models
+            - ./output:/usr/local/ComfyUI/output
+            - ./input:/usr/local/ComfyUI/input
+            - ./custom_nodes:/usr/local/ComfyUI/custom_nodes
