@@ -3,7 +3,3 @@ ComfyUI/.ci
 ComfyUI/*.example
 ComfyUI/*.png
 ComfyUI/notebooks
-ComfyUI/models
-ComfyUI/output
-ComfyUI/input
-ComfyUI/custom_nodes
