@@ -6,8 +6,8 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
 RUN pip install -U pip \
   && pip install -U wheel \
-  && pip install --extra-index-url https://download.pytorch.org/whl/cu117 \
-    torch==1.13.1 \
+  && pip install --extra-index-url https://download.pytorch.org/whl/cu118 \
+    torch \
     torchvision \
     torchaudio \
   && pip install xformers
